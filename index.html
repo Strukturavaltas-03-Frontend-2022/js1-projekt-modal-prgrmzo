@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modal</title>
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/main.css" />
     <style>
-        body {
-            font-family: Helvetica;
-        }
+      body {
+        font-family: Helvetica;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Kattints a Modal megtekintéséhez!</h1>
     <button class="modal-btn">Kattintok!</button>
 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" tabindex="1">&times;</span>
         <div class="modal-header">
-        <h2>CSSScript.com</h2>
+          <h2>CSSScript.com</h2>
         </div>
         <div class="modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Praesent id quam tellus. Nullam sit amet luctus augue.
-              Donec nec venenatis lacus. Ut facilisis arcu lorem,
-               nec gravida orci cursus sed. Nam aliquet volutpat nunc,
-                non ultrices neque porttitor ac. Vestibulum at rutrum magna.
-                 Suspendisse id molestie risus. Donec eu lacus lobortis,
-                  fringilla erat vitae, molestie augue. Sed mollis mauris
-                   sit amet ultricies cursus. Nam vulputate enim a est
-                    sagittis dignissim. Mauris non nibh ac nisl porttitor
-                     pretium. Praesent id orci non tellus rutrum fermentum..</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
+            quam tellus. Nullam sit amet luctus augue. Donec nec venenatis
+            lacus. Ut facilisis arcu lorem, nec gravida orci cursus sed. Nam
+            aliquet volutpat nunc, non ultrices neque porttitor ac. Vestibulum
+            at rutrum magna. Suspendisse id molestie risus. Donec eu lacus
+            lobortis, fringilla erat vitae, molestie augue. Sed mollis mauris
+            sit amet ultricies cursus. Nam vulputate enim a est sagittis
+            dignissim. Mauris non nibh ac nisl porttitor pretium. Praesent id
+            orci non tellus rutrum fermentum..
+          </p>
         </div>
-        <div class="modal-footer">            
-                <button class="btn-okey">Okey</button>
-                <button class="btn-cancel">Cancel</button>           
+        <div class="modal-footer">
+          <button class="btn-okey" tabindex="2">Okey</button>
+          <button class="btn-cancel" tabindex="3">Cancel</button>
         </div>
+      </div>
     </div>
-</div>
 
-<script src="/main.js"></script>
-</body>
+    <script src="/main.js"></script>
+  </body>
 </html>

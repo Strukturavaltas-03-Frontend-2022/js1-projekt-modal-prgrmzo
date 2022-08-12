@@ -1,70 +1,72 @@
-body{
+body {
   height: 100vh;
   width: 100vw;
 }
 
-.active{
- animation: bodyFade 0.5s linear;
+.active {
+  animation: bodyFade 0.5s;
 }
 
 @keyframes bodyFade {
   0% {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
   }
   100% {
-    background-color: rgba(255,255,255,);
+    background-color: rgba(255, 255, 255);
   }
 }
 
-
-.modal-btn{
-    font-size: 2em;
+.modal-btn {
+  font-size: 2em;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-  }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 12% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 100%;
-    font-size: 1.5em;
+  background-color: #fefefe;
+  margin: 12% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  font-size: 1.5em;
 }
 
 .modal-open {
-  display:block;
+  display: block;
   animation-name: fadeIn;
   animation-duration: 0.5s;
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0}
-  100% {opacity: 1}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.modal-close{
-  display:none;
+.modal-close {
+  display: none;
 }
 
 .modal-content p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .close {
-    color: #000;
-    float: right;
-    font-size: 46px;
-  }
+  color: #000;
+  float: right;
+  font-size: 46px;
+}
 
 .close:hover,
 .close:focus {
@@ -73,39 +75,39 @@ body{
 }
 
 .modal-footer {
-   display: flex;
-   justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .btn-okey,
 .btn-cancel {
-    background: none;
-    padding: 10px 15px;
-    margin: 10px;
-    border: none;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
+  background: none;
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .btn-okey {
-    background-color: rgb(22, 189, 22);
+  background-color: rgb(22, 189, 22);
 }
 
 .btn-cancel {
-    background-color: rgb(252, 19, 19);
+  background-color: rgb(252, 19, 19);
 }
 
 .btn-okey:hover {
-  background-color:rgb(22, 255, 22);
+  background-color: rgb(22, 255, 22);
 }
 
 .btn-cancel:hover {
   background-color: rgb(255, 70, 70);
 }
 
-@media  screen and (min-width: 560px) {
-    .modal-content {
-        width: 50%;
-    }
+@media screen and (min-width: 560px) {
+  .modal-content {
+    width: 50%;
   }
+}
